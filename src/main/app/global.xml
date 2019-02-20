@@ -20,7 +20,7 @@ http://www.springframework.org/schema/context http://www.springframework.org/sch
 	<ee:object-store-caching-strategy name="Caching_Strategy" keyGenerationExpression="#[message.inboundProperties.'http.uri.params'.ID]" doc:name="Caching Strategy">
 	</ee:object-store-caching-strategy>
 
-	<context:property-placeholder location="common.properties,flights-app-${env}.properties,flights-app-override.properties" ignore-resource-not-found="true" />
+	<context:property-placeholder location="common.properties,mule-adv-training-app-${env}.properties,mule-adv-training-app-override.properties" ignore-resource-not-found="true" />
 
 
 </mule>
